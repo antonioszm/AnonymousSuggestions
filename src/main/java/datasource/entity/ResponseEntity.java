@@ -16,7 +16,7 @@ public class ResponseEntity {
     private String text;
     private LocalDate uploadDate;
 
-    @OneToOne
+    @ManyToOne
     @JoinColumn(name = "id_sugestion", nullable = false, unique = true)
-    private SugestionEntity id_sugestion;
+    private SugestionEntity sugestion;
 }
